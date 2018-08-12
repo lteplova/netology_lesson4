@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.cent {
+    text-align: center;
+}
+
+.limarkerstp2 {
+    list-style-type: none;
+    list-style-image: url("https://lteplova.github.io/netology_lessons/assets/img/mark.jpg");
+}
+
+.limarkerstp3 {
+    list-style-type: none;
+    list-style-type: upper-alpha;
+}
+
+.limarkerstp4 {
+    list-style-type: none;
+    list-style-type: decimal-leading-zero;
+}
+
+.limarkerstp5 {
+    list-style-type: none;
+}
+
+li.limarkerstp5:before {
+    content: "\27A0";
+}
+
+.under {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 2px;
+}
