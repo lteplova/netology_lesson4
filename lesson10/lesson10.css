@@ -66,6 +66,7 @@ ul.menu a {
 .promo {
     background: url(https://lteplova.github.io/netology_lessons/assets/img/header-backgroudn.jpg) no-repeat;
     height: 100vh;
+    min-height: 300px;
 }
 
 .promo div {
@@ -145,9 +146,8 @@ ul.menu a {
     margin-right: -4px;
     border-right: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
-    position: absolute;
 }
-
+ 
 /* .image img:hover {
   opacity: 0.7;
 }
