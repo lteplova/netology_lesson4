@@ -13,6 +13,9 @@ body {
   background-color: #ddd;
 }
 
+.icons {
+  height: 38px;
+}
 
 header {
   width: 100%;
