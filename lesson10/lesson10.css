@@ -152,11 +152,12 @@ ul.menu a {
 
 .image div:nth-child(4),
 div:nth-child(8) {
-  border-right: none;
+    border-right: none;
 }
+
 .image div:nth-child(1),
 div:nth-child(5) {
-  border-left: none;
+    border-left: none;
 }
 
 .image div h5 {
@@ -178,9 +179,9 @@ div:nth-child(5) {
 }
 
 .image h5>span:before {
-  content: "";
-  clear: both;
-  display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
 
 .image div:hover h5 {

@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Verdana, sans-serif
+}
+
+
+.grey {
+  background-color: #eee;
+}
+
+.grey2 {
+  background-color: #ddd;
+}
+
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+}
+
+.logo {
+  background-color: #ccc;
+  width: 150px;
+  height: 113px;
+  position: absolute;
+  left: 20px;
+  border-radius: 0 0 4px 4px;
+}
+
+.promo {
+  width: 100%;
+  height: 500px;
+}
+
+section {
+  width: 1140px;
+  min-height: 300px;
+  margin: 40px auto;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul.tres li {
+  display: inline-block;
+  width: 360px;
+  /* background-color: #eee; */
+  min-height: 300px;
+  margin: 0 12px;
+  border-radius: 4px;
+}
+
+ul.tres li:first-child {
+  margin-left: 0;
+}
+
+ul.tres li:last-child {
+  margin-right: 0;
+}
+
+ul.duos li {
+  display: inline-block;
+  width: 360px;
+  /* background-color: #eee; */
+  min-height: 300px;
+  margin: 0 12px;
+  border-radius: 4px;
+}
+
+ul.duos li:first-child {
+  margin-left: 0;
+}
+
+ul.duos li:last-child {
+  width: 750px;
+  margin-right: 0;
+}
+
+
