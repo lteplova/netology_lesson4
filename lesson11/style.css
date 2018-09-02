@@ -25,7 +25,7 @@ footer {
 }
 
 .logo {
-  background-color: #ccc;
+  background-color: rgba(240,50,38);
   width: 150px;
   height: 113px;
   position: absolute;
@@ -46,15 +46,41 @@ section {
 
 ul {
   padding-left: 0;
+  color: #1d3448;
 }
 
 ul.tres li {
+  cursor: pointer;
+  background-color: #f5f7f9;
+  vertical-align: top;
+  box-sizing: border-box;
+  list-style-type: none;
   display: inline-block;
   width: 360px;
-  /* background-color: #eee; */
   min-height: 300px;
   margin: 0 12px;
   border-radius: 4px;
+  padding: 30px;
+}
+
+ul.tres li h2 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 25px 0;
+}
+
+ul.tres li>p:nth-child(odd) {
+   font-weight: 700;
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+ul.tres li>p:nth-child(even) {
+    margin-top: 0;
+    font-size: 16px;
+    color: #1d3448;
+
 }
 
 ul.tres li:first-child {
@@ -64,6 +90,24 @@ ul.tres li:first-child {
 ul.tres li:last-child {
   margin-right: 0;
 }
+
+button {
+    width: 100%;
+    height: 46px;
+    background-color: rgba(240,50,38,.85);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #eee;
+}
+
+button:hover{
+  background-color: rgba(240,50,38);
+  cursor: pointer;
+}
+
 
 ul.duos li {
   display: inline-block;
