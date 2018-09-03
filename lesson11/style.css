@@ -1,133 +1,171 @@
 body {
-  padding: 0;
-  margin: 0;
-  font-family: Helvetica, Verdana, sans-serif
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Verdana, sans-serif
 }
 
 
-.grey {
-  background-color: #eee;
-}
-
-.grey2 {
-  background-color: #ddd;
+.menu {
+    background-color: #fff;
 }
 
 .icons {
-  height: 38px;
+    height: 38px;
 }
 
 header {
-  width: 100%;
-  height: 100px;
+    width: 100%;
+    height: 100px;
 }
 
 footer {
-  width: 100%;
-  height: 400px;
+    width: 100%;
+    height: 400px;
 }
 
 .logo {
-  background-color: rgba(240,50,38);
-  width: 150px;
-  height: 113px;
-  position: absolute;
-  left: 20px;
-  border-radius: 0 0 4px 4px;
+    background-color: rgb(240, 50, 38);
+    width: 150px;
+    height: 113px;
+    position: absolute;
+    left: 20px;
+    border-radius: 0 0 4px 4px;
 }
 
 .promo {
-  width: 100%;
-  height: 500px;
+    background-color: #c7d2e4;
+    width: 100%;
+    height: 500px;
 }
 
 section {
-  width: 1140px;
-  min-height: 300px;
-  margin: 40px auto;
+    width: 1140px;
+    min-height: 300px;
+    margin: 40px auto;
 }
 
 ul {
-  padding-left: 0;
-  color: #1d3448;
+    padding-left: 0;
+    color: #1d3448;
 }
 
-ul.tres li {
-  cursor: pointer;
-  background-color: #f5f7f9;
-  vertical-align: top;
-  box-sizing: border-box;
-  list-style-type: none;
-  display: inline-block;
-  width: 360px;
-  min-height: 300px;
-  margin: 0 12px;
-  border-radius: 4px;
-  padding: 30px;
+ul.hotoffer li {
+    cursor: pointer;
+    background-color: #f5f7f9;
+    vertical-align: top;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: inline-block;
+    width: 360px;
+    min-height: 300px;
+    margin: 0 12px;
+    border-radius: 4px;
+    padding: 30px;
 }
 
-ul.tres li h2 {
-  font-size: 24px;
-  line-height: 24px;
-  margin: 25px 0;
+ul.hotoffer li h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 25px 0;
 }
 
-ul.tres li>p:nth-child(odd) {
-   font-weight: 700;
+ul.hotoffer li>p:nth-child(odd) {
+    font-weight: 700;
     margin: 0;
     font-size: 40px;
     line-height: 48px;
 }
 
-ul.tres li>p:nth-child(even) {
+ul.hotoffer li>p:nth-child(even) {
     margin-top: 0;
     font-size: 16px;
     color: #1d3448;
-
 }
 
-ul.tres li:first-child {
-  margin-left: 0;
+ul.hotoffer li:first-child {
+    margin-left: 0;
 }
 
-ul.tres li:last-child {
-  margin-right: 0;
+ul.hotoffer li:last-child {
+    margin-right: 0;
 }
 
 button {
     width: 100%;
     height: 46px;
-    background-color: rgba(240,50,38,.85);
+    background-color: rgba(240, 50, 38, .85);
     border: none;
     outline: none;
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-size: 0.8em;
+    border-radius: 4px;
+    font-size: 1em;
     color: #eee;
 }
 
-button:hover{
-  background-color: rgba(240,50,38);
-  cursor: pointer;
+button:hover {
+    background-color: rgb(240, 50, 38);
+    cursor: pointer;
+}
+
+.cashback {
+    background-color: #eee;
+    background-color: #696969;
 }
 
 
-ul.duos li {
-  display: inline-block;
-  width: 360px;
-  /* background-color: #eee; */
-  min-height: 300px;
-  margin: 0 12px;
-  border-radius: 4px;
+ul.ipoteka li {
+    background-color: #eee;
+    display: inline-block;
+    width: 360px;
+    min-height: 400px;
+    margin: 0 12px;
+    border-radius: 4px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-ul.duos li:first-child {
-  margin-left: 0;
+ul.ipoteka li:first-child {
+    background-color: #696969;
+    margin-left: 0;
 }
 
-ul.duos li:last-child {
-  width: 750px;
-  margin-right: 0;
+ul.ipoteka li:last-child {
+    width: 750px;
+    background-color: #f5f7f9;
+    margin-right: 0;
 }
 
+ul.ipoteka li div.offer {
+    width: 250px;
+    height: calc(100% - 40px);
+    right: 20px;
+    position: absolute;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, .15);
+}
 
+ul.forfamily li {
+    background-color: #696969;
+    vertical-align: top;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: inline-block;
+    width: 360px;
+    min-height: 300px;
+    margin: 0 12px;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+ul.forfamily li:first-child {
+    margin-left: 0;
+}
+
+ul.forfamily li:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background-color: #f5f7f9;
+}
