@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-.mcent div {
+.mcent>div {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
@@ -23,12 +23,12 @@ body {
     vertical-align: top;
     width: 33.333%;
     margin-left: -5px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 }
 
 .mcent div h2 {
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 44px;
     font-size: 14px;
     color: #2d3033;
 }
@@ -40,6 +40,39 @@ body {
     font-weight: 300;
     letter-spacing: 0;
     padding: 0 20px;
+}
+
+.icons {
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/sprite_icons.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    width: 79px;
+    height: 65px;
+}
+
+.icon__first {
+    background-position: -6px;
+}
+
+.icon__second {
+    background-position: -90px;
+}
+
+.icon__third {
+    background-position: -170px;
+}
+
+.icon__fourth {
+    background-position: -240px;
+}
+
+.icon__fifth {
+    background-position: -320px;
+}
+
+.icon__sixth {
+    background-position: -410px;
 }
 
 .image div {
