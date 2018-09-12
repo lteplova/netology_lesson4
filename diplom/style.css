@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cookie, cursive;
+    font-family: Montserrat, sans-serif;
+    font-family: Vollkorn, serif;
+    font-family: Roboto Slab, serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    height: 70px;
+}
+
+.center {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.center:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    margin: auto 0;
+    line-height: 70px;
+    font-family: Cookie;
+    color: #fed136;
+    font-size: 36px;
+    float: left;
+    text-align: left;
+}
+
+.menu {
+
+    line-height: 70px;
+    float: right;
+    text-align: right;
+    margin: 0;
+}
+
+ul.menu li {
+    list-style: none;
+    display: inline-block;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    vertical-align: top;
+    font-size: 14px;
+    width: 100px;
+    margin-right: -5px;
+}
+
+ul.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.promo {
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+
+    font-family: Monserrat;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    height: 700px;
+}
+
+.promo .overlay {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    height: 630px;
+}
+
+.promo h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 3.8em;
+}
+
+.promo p {
+    color: #fff;
+    font-size: 45px;
+    font-family: Vollkorn;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.promo button {
+    width: 240px;
+    height: 70px;
+    /*margin: auto;*/
+    background-color: #fed136;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #eee;
+    text-align: center;
+}
