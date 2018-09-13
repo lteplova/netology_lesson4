@@ -66,8 +66,6 @@ ul.menu a {
     background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -100px;
-
     font-family: Monserrat;
     font-weight: 700;
     margin: auto;
@@ -113,4 +111,34 @@ ul.menu a {
     font-size: 0.8em;
     color: #eee;
     text-align: center;
+}
+
+.services h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+   
+}
+
+.services p {
+    font-family: Vollkorn;
+    font-style: italic;
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+
+}
+
+.icons {
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/services_sprite.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    width: 33%;
+   
+}
+
+.icon1{
+
 }
