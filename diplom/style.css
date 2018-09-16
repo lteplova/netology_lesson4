@@ -13,7 +13,7 @@ header {
     position: fixed;
     top: 0px;
     z-index: 1;
-    height: 70px;
+    height: 120px;
 }
 
 .center {
@@ -29,18 +29,18 @@ header {
 }
 
 .logo {
-    margin: auto 0;
-    line-height: 70px;
+    line-height: 115px;
     font-family: Cookie;
     color: #fed136;
-    font-size: 36px;
+    font-size: 41px;
     float: left;
     text-align: left;
+    margin-left: 5px;
 }
 
 .menu {
 
-    line-height: 70px;
+    line-height: 120px;
     float: right;
     text-align: right;
     margin: 0;
@@ -53,8 +53,7 @@ ul.menu li {
     text-transform: uppercase;
     vertical-align: top;
     font-size: 14px;
-    width: 100px;
-    margin-right: -5px;
+    margin-left: 37px;
 }
 
 ul.menu a {
@@ -66,7 +65,8 @@ ul.menu a {
     background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Monserrat;
+    background-position: 0% 20%;
+    font-family: Montserrat;
     font-weight: 700;
     margin: auto;
     text-align: center;
@@ -75,70 +75,232 @@ ul.menu a {
 
 .promo .overlay {
     position: absolute;
-    top: 70px;
+    top: 120px;
     left: 0px;
     right: 0px;
     box-sizing: border-box;
-    padding-top: 200px;
+    padding-top: 127px;
     background-color: rgba(0, 0, 0, .5);
-    height: 630px;
+    height: 580px;
 }
 
 .promo h1 {
     color: #FFF;
     text-transform: uppercase;
-    font-size: 3.8em;
+    font-size: 4.4em;
+    margin: 20px;
 }
 
 .promo p {
     color: #fff;
     font-size: 45px;
+    font-weight: 300;
     font-family: Vollkorn;
     font-style: italic;
     text-transform: capitalize;
+    margin: 20px;
 }
 
 .promo button {
     width: 240px;
     height: 70px;
-    /*margin: auto;*/
+    margin: 20px;
     background-color: #fed136;
     border: none;
     outline: none;
     border-radius: 2px;
-    font-size: 18px;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 1.1em;
+    font-weight: 600;
     color: #eee;
     text-align: center;
 }
 
-.services h2 {
+section h2 {
     font-family: Montserrat;
+    text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     font-size: 40px;
-    text-align: center;
-   
 }
 
-.services p {
+section p {
+    text-align: center;
     font-family: Vollkorn;
     font-style: italic;
-    font-size: 20px;
     color: #777777;
-    text-align: center;
-
+    font-size: 20px;
 }
 
 .icons {
-    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/services_sprite.png);
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/servicies-sprite.png);
     background-repeat: no-repeat;
     margin: auto;
     text-align: center;
-    width: 33%;
+    width: 80px;
+    height: 80px;
+}
+
+.blocks {
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.333%;
+    margin-left: -5px;
+}
+
+.blocks h2,
+.gallery h2,
+.about h2  {
+    font-family: Montserrat;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.blocks p {
+    font-family: Roboto Slab;
+    color: #777777;
+    padding: 10px 105px;
+    font-size: 14px;
+}
+
+.icon1 {
+    background-position: 5px;
+}
+
+.icon2 {
+    background-position: -85px;
+}
+
+.icon3 {
+    background-position: -165px;
+}
+
+section.headgallery {
+     background-color: #F7F7F7;
+     padding: 100px 0;
+}
+
+.gallery p {
+    text-align: center;
+    font-family: Vollkorn;
+    font-style: italic;
+    color: #777777;
+    font-size: 17px;
+}
+
+.wrapper {
+    width: 968px;
+    margin: 0 auto;
+
+}
+.gallery div {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background-position: center;
+    width: 290px;
+    height: 300px;
+    padding: 10%;
+
+}
+
+.gallery  {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 15px;
+    width: 290px;
+    text-align: center;
+   background-color: #fff;
    
 }
 
-.icon1{
+.about {
+    vertical-align: top;
+    /* border: solid red; */
+    width: 300px;
+    display: inline-block;
+}
 
+.about h2 {
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+
+
+}
+
+.about h3 { 
+font-size: 18px;
+color: rgb(34,34,34);
+font-family: "Montserrat";
+font-weight: bold;
+text-align: right;
+margin: 0;
+
+}
+
+.about p {
+font-size: 14px;
+color: #777777;
+font-family: "Roboto Slab";
+text-align: right;
+font-style: normal;
+
+}
+
+.about.left {
+    padding: 10px 30px 0 50px;
+}
+
+.about.right * {
+    text-align: left;
+}
+
+.roundpic {
+    width: 180px;
+    height: 180px;
+    border: solid 10px #F7F7F7;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+
+}
+.vline {
+    width: 2px;
+    height: 90px;
+    background-color: #F7F7F7;
+
+}
+
+.last {
+padding: 20px;
+font-size: 18px;
+color: rgb(255,255,255);
+font-family: "Montserrat";
+font-weight: bold;
+text-align: center;
+text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+text-transform: uppercase;
+line-height: 30px;
+background-color: #fed136;
+display: block;
+box-sizing: border-box;
+padding: 30px;
+}
+
+.socicon {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 35px;
+    display: inline-block;
 }
