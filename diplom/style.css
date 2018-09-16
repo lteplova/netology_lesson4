@@ -1,11 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Cookie, cursive;
-    font-family: Montserrat, sans-serif;
+    /* font-family: Cookie, cursive;
     font-family: Vollkorn, serif;
-    font-family: Roboto Slab, serif;
+    font-family: Roboto Slab, serif; */
+    font-family: Montserrat, sans-serif;
 }
+
+.wrapper {
+    min-width: 940px;
+    margin: 0 auto;
+    padding: 0 15%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 
 header {
     background-color: rgba(0, 0, 0, .5);
@@ -19,7 +28,8 @@ header {
 .center {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 940px;
+    min-width: 940px;
+    padding: 0 16%;
 }
 
 .center:after {
@@ -113,7 +123,7 @@ ul.menu a:hover {
     margin: 20px;
 }
 
-.promo button {
+button {
     width: 240px;
     height: 70px;
     margin: 20px;
@@ -129,24 +139,31 @@ ul.menu a:hover {
     cursor: pointer;
 }
 
-.promo button:hover {
+button:hover {
     background-color: #fdc918;
 }
 
-section h2 {
+section {
+    padding: 100px 0;
+}
+
+section>h2 {
     font-family: Montserrat;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     font-size: 40px;
+    margin: 0;
+    margin-top: 10px;
 }
 
-section p {
+section>p {
     text-align: center;
     font-family: Vollkorn;
     font-style: italic;
     color: #777777;
     font-size: 20px;
+    margin: 5px 0 70px 0;
 }
 
 .icons {
@@ -167,9 +184,13 @@ section p {
     margin-left: -5px;
 }
 
+.blocks h2 {
+    margin: 15px 0;
+}
+
 .blocks h2,
 .gallery h2,
-.about h2  {
+.about h2 {
     font-family: Montserrat;
     text-transform: capitalize;
     text-align: center;
@@ -180,7 +201,6 @@ section p {
 .blocks p {
     font-family: Roboto Slab;
     color: #777777;
-    padding: 10px 105px;
     font-size: 14px;
 }
 
@@ -189,17 +209,22 @@ section p {
 }
 
 .icon2 {
-    background-position: -85px;
+    background-position: -80px;
 }
 
 .icon3 {
-    background-position: -165px;
+    background-position: -160px;
 }
+
+
 
 section.headgallery,
 section.container_team {
-     background-color: #F7F7F7;
-     padding: 100px 0;
+    background-color: #F7F7F7;
+}
+
+.gallery h2 {
+    margin-bottom: 0;
 }
 
 .gallery p {
@@ -208,13 +233,10 @@ section.container_team {
     font-style: italic;
     color: #777777;
     font-size: 17px;
+    margin-top: 0;
 }
 
-.wrapper {
-    width: 968px;
-    margin: 0 auto;
 
-}
 .gallery div {
     box-sizing: border-box;
     display: inline-block;
@@ -223,24 +245,22 @@ section.container_team {
     width: 290px;
     height: 300px;
     padding: 10%;
-
 }
 
-.gallery  {
+.gallery {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    margin: 15px 15px;
+    margin: 25px 15px;
     width: 290px;
     text-align: center;
-   background-color: #fff;
-   
+    background-color: #fff;
 }
 
 .about {
     vertical-align: top;
     /* border: solid red; */
-    width: 300px;
+    width: 375px;
     display: inline-block;
 }
 
@@ -248,36 +268,39 @@ section.container_team {
     text-align: right;
     text-transform: uppercase;
     margin: 0;
-
-
 }
 
-.about h3 { 
-font-size: 18px;
-color: rgb(34,34,34);
-font-family: "Montserrat";
-font-weight: bold;
-text-align: right;
-margin: 0;
-
+.about h3 {
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: right;
+    margin: 0;
 }
 
 .about p {
-font-size: 14px;
-color: #777777;
-font-family: "Roboto Slab";
-text-align: right;
-font-style: normal;
-
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    text-align: right;
+    font-style: normal;
 }
 
 .about.left {
     padding: 10px 30px 0 50px;
+    box-sizing: border-box;
+}
+
+.about.right {
+    padding: 10px 50px 0 30px;
+    box-sizing: border-box;
 }
 
 .about.right * {
     text-align: left;
 }
+
 
 .roundpic {
     width: 180px;
@@ -287,71 +310,78 @@ font-style: normal;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-
+    box-sizing: border-box;
 }
+
 .vline {
     width: 2px;
-    height: 90px;
+    height: 100px;
     background-color: #F7F7F7;
-
+    margin: 0 auto;
 }
 
 .last {
-padding: 20px;
-font-size: 18px;
-color: rgb(255,255,255);
-font-family: "Montserrat";
-font-weight: bold;
-text-align: center;
-text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
-text-transform: uppercase;
-line-height: 30px;
-background-color: #fed136;
-display: block;
-box-sizing: border-box;
-padding: 30px;
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    line-height: 30px;
+    background-color: #fed136;
+    display: block;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto;
 }
 
 .team {
-
     width: 33.33%;
     display: inline-block;
     box-sizing: border-box;
     text-align: center;
     vertical-align: top;
     margin-left: -5px;
-
 }
 
 .photo_team {
     text-align: center;
     margin: auto;
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     border-radius: 100%;
     background-color: #000;
-
+    box-sizing: border-box;
 }
 
 .team h3 {
-font-size: 16px;
-font-family: "Montserrat";
-font-weight: 700;
-text-align: center;
-text-transform: capitalize;
-
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .team h4 {
-font-size: 14px;
-color: #777777;
-font-family: "Roboto Slab";
-font-weight: 400;
-text-align: center;
-text-transform: capitalize;
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
 }
 
- .socicon {
+.team_memo {
+    font-size: 16px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding: 30px 150px;
+}
+
+.socicon {
     display: inline-block;
     border: 3px solid black;
     border-radius: 50%;
@@ -360,7 +390,7 @@ text-transform: capitalize;
     background-repeat: no-repeat;
     margin: auto;
     text-align: center;
-} 
+}
 
 .twitter {
     background-position: 0 5px;
@@ -378,11 +408,105 @@ text-transform: capitalize;
     background-position: -150px 5px;
 }
 
-.team_memo {
-font-size: 16px;
-color: #777777;
-font-family: "Roboto Slab";
-text-align: center;
-padding: 30px;
-width: 650px;
+.partners {
+    padding: 10px 0;
+}
+
+.partners img {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 50px 2%;
+}
+
+.col50 {
+    width: 49%;
+    display: inline-block;
+    /* border: lime dotted; */
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.contact {
+    background-color: #222222;
+    background-image: url("https://lteplova.github.io/netology_lessons/assets/img/alfa/map.png");
+    background-repeat: no-repeat;
+    background-position: 60vw 10vh;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact p {
+    color: #B7B8B9;
+}
+
+.contact input {
+    width: calc(100% - 30px);
+    height: 50px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    margin: 0 30px 30px 0;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 210px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #B7B8B9;
+}
+
+footer {
+    line-height: 90px;
+}
+
+footer .wrapper {
+    text-align: left;
+}
+
+footer .left {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(85, 85, 85);
+    font-family: "Montserrat";
+    text-align: left;
+    display: inline-block;
+    width: calc(50% - 100px);
+}
+
+footer .social {
+    display: inline-block;
+    width: 200px;
+}
+
+
+
+footer .socicon {
+    border: none;
+    filter: invert(1);
+}
+
+footer .right {
+    width: calc(50% - 100px);
 }
