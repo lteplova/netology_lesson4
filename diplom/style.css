@@ -311,7 +311,47 @@ box-sizing: border-box;
 padding: 30px;
 }
 
-.socicon {
+.team {
+
+    width: 33.33%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-left: -5px;
+
+}
+
+.photo_team {
+    text-align: center;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: #000;
+
+}
+
+.team h3 {
+font-size: 16px;
+font-family: "Montserrat";
+font-weight: 700;
+text-align: center;
+text-transform: capitalize;
+
+}
+
+.team h4 {
+font-size: 14px;
+color: #777777;
+font-family: "Roboto Slab";
+font-weight: 400;
+text-align: center;
+text-transform: capitalize;
+
+
+}
+
+/* .socicon {
     border: 3px solid black;
     border-radius: 50%;
     width: 37px;
@@ -320,4 +360,4 @@ padding: 30px;
     text-align: center;
     line-height: 35px;
     display: inline-block;
-}
+} */
