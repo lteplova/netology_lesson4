@@ -36,6 +36,13 @@ header {
     float: left;
     text-align: left;
     margin-left: 5px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    color: #fdc918;
+    transform: scale(1.1);
 }
 
 .menu {
@@ -59,6 +66,11 @@ ul.menu li {
 ul.menu a {
     color: #fff;
     text-decoration: none;
+}
+
+ul.menu a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .promo {
@@ -114,6 +126,11 @@ ul.menu a {
     font-weight: 600;
     color: #eee;
     text-align: center;
+    cursor: pointer;
+}
+
+.promo button:hover {
+    background-color: #fdc918;
 }
 
 section h2 {
