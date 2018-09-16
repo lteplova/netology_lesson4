@@ -387,7 +387,6 @@ section.container_team {
     border-radius: 50%;
     width: 37px;
     height: 37px;
-    background-repeat: no-repeat;
     margin: auto;
     text-align: center;
 }
@@ -497,14 +496,11 @@ footer .left {
 
 footer .social {
     display: inline-block;
-    width: 200px;
 }
-
-
 
 footer .socicon {
     border: none;
-    filter: invert(1);
+    filter: invert(100%);
 }
 
 footer .right {
