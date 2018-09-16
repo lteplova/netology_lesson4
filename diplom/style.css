@@ -196,7 +196,8 @@ section p {
     background-position: -165px;
 }
 
-section.headgallery {
+section.headgallery,
+section.container_team {
      background-color: #F7F7F7;
      padding: 100px 0;
 }
@@ -315,6 +316,7 @@ padding: 30px;
 
     width: 33.33%;
     display: inline-block;
+    box-sizing: border-box;
     text-align: center;
     vertical-align: top;
     margin-left: -5px;
@@ -347,17 +349,40 @@ font-family: "Roboto Slab";
 font-weight: 400;
 text-align: center;
 text-transform: capitalize;
-
-
 }
 
-/* .socicon {
+ .socicon {
+    display: inline-block;
     border: 3px solid black;
     border-radius: 50%;
     width: 37px;
     height: 37px;
-    box-sizing: border-box;
+    background-repeat: no-repeat;
+    margin: auto;
     text-align: center;
-    line-height: 35px;
-    display: inline-block;
-} */
+} 
+
+.twitter {
+    background-position: 0 5px;
+}
+
+.fb {
+    background-position: -52px 5px;
+}
+
+.pint {
+    background-position: -100px 5px;
+}
+
+.gp {
+    background-position: -150px 5px;
+}
+
+.team_memo {
+font-size: 16px;
+color: #777777;
+font-family: "Roboto Slab";
+text-align: center;
+padding: 30px;
+width: 650px;
+}
