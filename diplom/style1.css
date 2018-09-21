@@ -557,11 +557,10 @@ section.container_team {
 }
 
 .footer .footer-copyright {
-  /*float: left;*/
+  float: left;
   font-size: 14px;
   line-height: 22px;
   color: rgb(85, 85, 85);
-  display: inline-block;
   vertical-align: top;
   top: 50%;
   transform: translate(0, 50%);
@@ -571,8 +570,7 @@ section.container_team {
   }
 
 .footer .footer-social {
- /* float: right;*/
- display: inline-block;
+  float: left;
  margin-left: 80px;
    }
 
