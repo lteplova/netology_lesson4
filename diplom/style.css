@@ -36,18 +36,18 @@ body {
     clear: both;
 }
 
-.header .logo {
+.logo {
     line-height: 110px;
     font-family: Cookie;
     color: #fed136;
     font-size: 40px;
-    /* float: left; */
     text-align: left;
     text-decoration: none;
+    display: inline-block;
     transition: all 0.2s ease-in-out;
 }
 
-.header .logo:hover {
+.logo:hover {
     color: #fdc918;
     transform: scale(1.1);
 }
@@ -355,6 +355,7 @@ section.container_team {
     background-position: center;
     display: inline-block;
     box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
 }
 
 .roundpic.right {
@@ -374,6 +375,7 @@ section.container_team {
 .roundpic:hover {
     border-color: #eee;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -445,6 +447,7 @@ section.container_team {
 }
 
 .socicon {
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/ss-sprite.png);
     display: inline-block;
     border: 3px solid black;
     border-radius: 50%;
@@ -452,6 +455,10 @@ section.container_team {
     height: 37px;
     margin: auto;
     text-align: center;
+}
+
+.socicon:hover {
+  border-color: #666;
 }
 
 .twitter {
@@ -471,17 +478,22 @@ section.container_team {
 }
 
 .partners {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .partners img {
     display: inline-block;
-    vertical-align: top;
-    width: 20%;
+    vertical-align: middle;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+
+.partners img:hover {
+  transform: scale(1.1);
 }
 
 .partners a {
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
 .col50 {
@@ -608,6 +620,10 @@ section.container_team {
     margin: 4px;
     border: none;
     filter: invert(100%);
+}
+
+.footer .socicon:hover {
+  filter: invert(80%);
 }
 
 .footer .right {
