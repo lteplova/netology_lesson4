@@ -13,6 +13,8 @@ body {
 }
 
 
+
+
 /* HEADER */
 
 .header {
@@ -83,6 +85,8 @@ body {
     color: #fff;
     text-decoration: underline;
 }
+
+
 
 
 /* PROMO */
@@ -338,8 +342,16 @@ section.container_team {
     float: left;
 }
 
+.about.left p {
+    padding-right: 222px;
+}
+
 .about.right {
     float: right;
+}
+
+.about.right p {
+    padding-left: 222px;
 }
 
 .about.right * {
@@ -458,7 +470,7 @@ section.container_team {
 }
 
 .socicon:hover {
-  border-color: #666;
+    border-color: #666;
 }
 
 .twitter {
@@ -489,7 +501,7 @@ section.container_team {
 }
 
 .partners img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .partners a {
@@ -516,6 +528,8 @@ section.container_team {
 .col50:nth-child(2) {
     margin-left: 20px;
 }
+
+
 
 
 /* 
@@ -589,6 +603,8 @@ section.container_team {
 }
 
 
+
+
 /* FOOTER */
 
 .footer {
@@ -623,7 +639,7 @@ section.container_team {
 }
 
 .footer .socicon:hover {
-  filter: invert(80%);
+    filter: invert(80%);
 }
 
 .footer .right {
