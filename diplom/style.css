@@ -1,648 +1,834 @@
+/* COMMON STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.col50 {
+  /* width: 450px; */
+  width: calc(100% / 2);
+  float: left;
+  /* box-sizing: border-box; */
+  vertical-align: top;
+}
+
+.col50:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.col50:nth-child(1) {
+  padding-right: 20px;
+  /* margin-right: 20px; */
+}
+
+.col50:nth-child(2) {
+  padding-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .wrapper {
-    width: 940px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: center;
-    clear: both;
+  width: 940px;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
 }
-
-
-
 
 /* HEADER */
 
 .header {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    height: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  height: 120px;
 }
 
 .header .center {
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 940px;
+  margin: 0 auto;
+  width: 940px;
 }
 
 .header .center:after {
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .logo {
-    line-height: 110px;
-    font-family: Cookie;
-    color: #fed136;
-    font-size: 40px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
+  line-height: 110px;
+  font-family: Cookie;
+  color: #fed136;
+  font-size: 40px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
 }
 
 .logo:hover {
-    color: #fdc918;
-    transform: scale(1.1);
+  color: #fdc918;
+  transform: scale(1.1);
 }
 
 .header .menu {
-    line-height: 120px;
-    float: right;
-    text-align: right;
-    margin: 0;
-    padding-left: 0;
+  line-height: 120px;
+  float: right;
+  text-align: right;
+  margin: 0;
+  padding-left: 0;
 }
 
 .header .menu-item {
-    list-style: none;
-    display: inline-block;
-    text-transform: uppercase;
-    vertical-align: top;
-    font-size: 14px;
-    margin-left: 37px;
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: top;
+  font-size: 14px;
+  margin-left: 37px;
 }
 
 .header .menu-item:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .header .menu-link {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-
 
 .header .menu-link:hover {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
-
-
-
 
 /* PROMO */
 
 .promo {
-    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -40px;
-    font-weight: 700;
-    margin: auto;
-    text-align: center;
-    height: 700px;
-    position: relative;
+  background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -40px;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+  height: 700px;
+  position: relative;
 }
 
 .promo_text_center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .promo .overlay {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding-top: 127px;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 580px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding-top: 127px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 580px;
 }
 
 .promo h1 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 4.4em;
-    margin: 20px;
-    white-space: nowrap;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4.4em;
+  margin-top: 0px;
+  margin-bottom: 20px; /* ?? */
+  white-space: nowrap;
 }
 
 .promo p {
-    color: #fff;
-    font-size: 45px;
-    font-weight: 300;
-    font-family: Vollkorn;
-    font-style: italic;
-    text-transform: capitalize;
-    margin: 10px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 300;
+  font-family: Vollkorn;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-top: 0px;
+  margin-bottom: 10px; /* ?? */
 }
 
 button {
-    width: 240px;
-    height: 70px;
-    margin: 20px;
-    background-color: #fed136;
-    border: none;
-    outline: none;
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #eee;
-    text-align: center;
-    cursor: pointer;
+  width: 240px;
+  height: 70px;
+  background-color: #fed136;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #eee;
+  text-align: center;
+  cursor: pointer;
 }
 
+/*
+зачем у Вас круговой margin вокруг каждого из элементов? - http://take.ms/quccX
+для отбивки элементов друг от друга достаточно margin-bottom
+*/
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button:hover {
-    background-color: #fdc918;
+  background-color: #fdc918;
 }
 
 section {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
-header>h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-    margin: 0;
-    margin-top: 10px;
+header > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+  margin-top: 10px;
 }
 
-header>p {
-    text-align: center;
-    font-family: Vollkorn;
-    font-style: italic;
-    color: #777777;
-    font-size: 20px;
-    margin: 5px 0 70px 0;
+header > p {
+  text-align: center;
+  font-family: Vollkorn;
+  font-style: italic;
+  color: #777777;
+  font-size: 20px;
+  margin: 5px 0 70px 0;
 }
 
 .icons {
-    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/servicies-sprite.png);
-    background-repeat: no-repeat;
-    margin: auto;
-    text-align: center;
-    width: 80px;
-    height: 80px;
+  background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/servicies-sprite.png);
+  background-repeat: no-repeat;
+  margin: auto;
+  text-align: center;
+  width: 80px;
+  height: 80px;
 }
 
-.blocks {
-    text-align: center;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    width: 33.333%;
-    margin-left: -5px;
-    padding: 0 10px;
+/* SERVICE */
+
+.service {
+  /**/
 }
 
-.blocks h2 {
-    margin: 15px 0;
+.service .services-header {
+  margin-bottom: 70px;
 }
 
-.blocks h2,
-.gallery h2,
-.about h2 {
-    text-transform: capitalize;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
+.service .service-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.service .service-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.service .service-main {
+  overflow: hidden;
+}
+
+.service .service-block {
+  text-align: center;
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 10px;
+}
+
+.service .service-block-icon {
+  margin-bottom: 15px;
+}
+
+.service .service-block-title {
+  margin: 0 0 15px;
+  text-transform: capitalize;
+}
+
+.service .service-block-subtitle {
+  font-family: Roboto Slab;
+  color: #777777;
+  font-size: 14px;
+}
+
+/* .blocks h2, */
+.gallery h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .blocks p {
-    font-family: Roboto Slab;
-    color: #777777;
-    font-size: 14px;
+  /* font-family: Roboto Slab;
+  color: #777777;
+  font-size: 14px; */
 }
 
 .icon1 {
-    background-position: 5px;
+  background-position: 5px;
 }
 
 .icon2 {
-    background-position: -80px;
+  background-position: -80px;
 }
 
 .icon3 {
-    background-position: -160px;
+  background-position: -160px;
 }
 
-section.headgallery,
-section.container_team {
-    background-color: #f7f7f7;
+/* HEADGALLERY */
+
+.headgallery {
+  background-color: #f7f7f7;
 }
 
-.gallery h2 {
-    margin-bottom: 0;
-    margin-top: 28px;
+.headgallery .headgallery-header {
+  margin-bottom: 70px;
+}
+
+.headgallery .headgallery-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.headgallery .headgallery-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.headgallery .headgallery-main {
+  overflow: hidden;
+}
+
+.gallery {
+  /* box-sizing: border-box; */
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  float: left;
+  margin: 0 30px 55px 0;
+  width: 290px;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 16px;
 }
 
 .gallery:hover {
-    cursor: pointer;
-}
-
-.gallery p {
-    text-align: center;
-    font-family: Vollkorn;
-    font-style: italic;
-    color: #777777;
-    font-size: 17px;
-    margin-top: 0;
-}
-
-.gallery div {
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    background-position: center;
-    width: 290px;
-    height: 300px;
-    padding: 10%;
+  /* cursor: pointer; */
 }
 
 .gallery:nth-child(1),
 .gallery:nth-child(4) {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .gallery:nth-child(3),
 .gallery:nth-child(6) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.gallery:nth-child(n+3) {
-    margin-bottom: 20px;
+.gallery:nth-child(n + 3) {
+  margin-bottom: 20px;
+  /* у Вас висячие margin-bottom так и остались - http://take.ms/2zXtg */
 }
 
-.gallery {
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 30px 55px 0;
-    width: 290px;
-    text-align: center;
-    background-color: #fff;
+.gallery .gallery-image {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  background-position: center;
+  width: 290px;
+  height: 300px;
+  padding: 10%;
+  margin-bottom: 30px;
 }
 
-.about {
-    vertical-align: top;
-    display: inline-block;
-    width: 560px;
-    margin-top: 5px;
-    margin-bottom: 78px;
-    padding: 4px;
+.gallery .gallery-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  /* margin-top: 28px; */
+  color: #777777;
 }
 
-
-.about h2 {
-    text-align: right;
-    text-transform: uppercase;
-    margin: 0;
+.gallery .gallery-text {
+  text-align: center;
+  font-family: Vollkorn;
+  font-style: italic;
+  color: #777777;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.about h3 {
-    font-size: 18px;
-    color: rgb(34, 34, 34);
-    font-weight: bold;
-    text-align: right;
-    margin: 0;
+/* ABOUT */
+
+/*
+Я подскажу Вам, как правильно сделать здесь - http://take.ms/li5T83
+Вам останется только доработать код
+*/
+
+.about .about-header {
+  margin-bottom: 70px;
+  text-align: center;
 }
 
-.about p {
-    font-size: 14px;
-    color: #777777;
-    font-family: 'Roboto Slab';
-    text-align: right;
-    font-style: normal;
-    line-height: 21px;
+.about .about-main {
+  padding: 0;
+  position: relative;
 }
 
-.vert_line:before {
-    position: absolute;
-    transform: translate(-50%, 5%);
-    content: " ";
-    background: #f7f7f7;
-    width: 2px;
-    height: 1140px;
-    float: left;
-    margin-right: 10px;
-    margin: auto;
-    z-index: -1;
+.about .about-main::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 80%;
+  background-color: #f3f3f3;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.about-item .about-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.about-item .about-subtitle {
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: right;
+}
+
+.about .wrapper {
+  overflow: hidden;
+}
+
+.about .about-main-item {
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 3;
+}
+
+.about-item {
+  width: 563px;
+}
+
+.about-item.left {
+  float: left;
+}
+
+.about-item.right {
+  float: right;
+}
+
+.about .about-item-text {
+  font-size: 14px;
+  color: #777777;
+  font-family: 'Roboto Slab';
+  text-align: right;
+  font-style: normal;
+  line-height: 21px;
 }
 
 .about.left {
-    float: left;
+  /* float: left; */
 }
 
-.about.left p {
-    padding-right: 222px;
+.about-item.left .about-item-text {
+  padding-right: 222px;
 }
 
-.about.right {
-    float: right;
+.about-item.right .about-item-text {
+  padding-left: 222px;
 }
 
-.about.right p {
-    padding-left: 222px;
+.about .about-main-item:last-child {
+  padding-bottom: 0;
 }
 
-.about.right * {
-    text-align: left;
+.about-item.right * {
+  text-align: left;
 }
 
 .roundpic {
-    width: 185px;
-    height: 185px;
-    border: solid 7px #f7f7f7;
-    border-radius: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
+  width: 185px;
+  height: 185px;
+  border: solid 7px #f7f7f7;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 .roundpic.right {
-    float: right;
-    margin-left: 42px;
+  float: right;
+  margin-left: 42px;
 }
 
 .roundpic.left {
-    float: left;
-    margin-right: 38px;
+  float: left;
+  margin-right: 38px;
 }
 
 #third_round {
-    background-position: bottom;
+  background-position: bottom;
 }
 
 .roundpic:hover {
-    border-color: #eee;
-    cursor: pointer;
-    transform: scale(1.1);
+  border-color: #eee;
+  cursor: pointer;
 }
-
-
 
 .last {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    line-height: 30px;
-    background-color: #fed136;
-    display: block;
-    box-sizing: border-box;
-    padding: 32px;
-    margin: 17px auto;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  line-height: 30px;
+  background-color: #fed136;
+  display: block;
+  box-sizing: border-box;
+  padding: 32px;
+  margin: 17px auto;
 }
 
-section.container_team {
-    padding-bottom: 70px;
-}
+/* TEAM */
 
 .team {
-    width: 30%;
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    vertical-align: top;
-    margin-left: -5px;
-    margin-top: 15px;
+  padding-bottom: 70px;
+  background-color: #f7f7f7;
 }
 
-.photo_team {
-    text-align: center;
-    margin: auto;
-    width: 220px;
-    height: 220px;
-    border-radius: 100%;
-    background-color: #000;
-    box-sizing: border-box;
+.team-header {
+  margin-bottom: 70px;
 }
 
-.team h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 0;
-    text-align: center;
-    text-transform: capitalize;
+.team .team-title {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
-.team h4 {
-    font-size: 14px;
-    color: #777777;
-    font-family: 'Roboto Slab';
-    font-weight: 400;
-    text-align: center;
-    margin: 7px;
-    text-transform: capitalize;
+.team .team-subtitle {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.team_memo {
-    font-size: 16px;
-    color: #777777;
-    font-family: 'Roboto Slab';
-    text-align: center;
-    padding: 30px 0;
+.team .team-main {
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.socicon {
-    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/ss-sprite.png);
-    display: inline-block;
-    border: 3px solid black;
-    border-radius: 50%;
-    width: 37px;
-    height: 37px;
-    margin: auto;
-    text-align: center;
+.team .team-card {
+  /* width: 30%; */
+  width: calc(100% / 3);
+  float: left;
+  /* display: inline-block; */
+  /* box-sizing: border-box; */
+  text-align: center;
+  /* vertical-align: top; */
+  /* margin-left: -5px; */
+  /* margin-top: 15px; */
+}
+
+.team .team-media {
+  margin: 0 auto 20px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.team .team-image {
+  display: block;
+  border-radius: 50%;
+  /* text-align: center; */
+  /* margin: 0 auto 20px; */
+  /* box-sizing: border-box; */
+}
+
+.team .team-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  /* margin-top: 20px; */
+  /* margin-bottom: 0; */
+  /* text-align: center; */
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+
+.team .team-card-subtitle {
+  font-size: 14px;
+  color: #777777;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  text-align: center;
+  /* margin: 7px; */
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+
+.team .team-memo {
+  /* padding: 30px 0; */
+}
+
+.team .team-footer {
+  /* padding: 30px 0; */
+}
+
+.team .team-memo {
+  max-width: 768px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #777777;
+  font-family: 'Roboto Slab';
+  text-align: center;
+}
+
+.team .team-meta-link {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.team .team-meta-link .socicon {
+  display: block;
+  background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/ss-sprite.png);
+  /* display: inline-block; */
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  /* margin: auto; */
+  /* text-align: center; */
 }
 
 .socicon:hover {
-    border-color: #666;
+  border-color: #666;
 }
 
 .twitter {
-    background-position: 0 5px;
+  background-position: -4px 2px;
 }
 
 .fb {
-    background-position: -52px 5px;
+  background-position: -55px 0;
 }
 
 .pint {
-    background-position: -100px 5px;
+  background-position: -104px 0;
 }
 
 .gp {
-    background-position: -150px 5px;
+  background-position: -154px 2px;
 }
+
+/* PARTNERS */
 
 .partners {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
-.partners img {
-    display: inline-block;
-    vertical-align: middle;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
+.partners .partners-link {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.partners .partners-link:last-child {
+  margin-right: 0;
+}
+
+.partners .partners-image {
+  /* display: inline-block; */
+  vertical-align: middle;
+  /* display: inline-block; */
+  transition: all 0.2s ease-in-out;
 }
 
 .partners img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .partners a {
-    padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
-.col50 {
-    width: 450px;
-    float: left;
-    box-sizing: border-box;
-    vertical-align: top;
-}
-
-.col50:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.col50:nth-child(1) {
-    margin-right: 20px;
-}
-
-.col50:nth-child(2) {
-    margin-left: 20px;
-}
-
-
-
-
-/* 
+/*
 .contact-main {
   border: solid green;
 
 } */
 
-.contact-form {
-    overflow: hidden;
-    padding-bottom: 20px;
-}
+/* CONTACT */
 
 .contact {
-    background-color: #222222;
-    background-image: url('https://lteplova.github.io/netology_lessons/assets/img/alfa/map.png');
-    background-repeat: no-repeat;
-    background-position: 60vw 10vh;
-    text-align: center;
-    padding-bottom: 115px;
+  background-color: #222222;
+  background-image: url('https://lteplova.github.io/netology_lessons/assets/img/alfa/map.png');
+  background-repeat: no-repeat;
+  background-position: 60vw 10vh;
+  text-align: center;
+  /* padding-bottom: 115px; */
 }
 
-.contact h2 {
-    color: #fff;
+.contact .contact-header {
+  margin-bottom: 70px;
+}
+
+.contact-form {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.contact .contact-title {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.contact .contact-subtitle {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #b7b8b9;
 }
 
 .contact p {
-    color: #b7b8b9;
+  /* color: #b7b8b9; */
 }
 
 .contact input {
-    width: 100%;
-    height: 50px;
-    border-radius: 2px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border: 1px solid #cbcbcb;
-    margin-bottom: 30px;
-    padding: 0 20px;
-    font-size: 14px;
-    color: #666;
-    font-weight: bold;
-    text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+  /* box-sizing: border-box; */
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .contact input:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .contact textarea {
-    width: 100%;
-    height: 210px;
-    border-radius: 2px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border: 1px solid #cbcbcb;
-    padding: 15px 20px;
-    font-size: 14px;
-    color: #666;
-    font-weight: bold;
-    text-transform: uppercase;
+  width: 100%;
+  height: 210px;
+  border-radius: 2px;
+  /* box-sizing: border-box; */
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #666;
+  /* font-weight: bold; */
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .contact input::placeholder,
 .contact textarea::placeholder {
-    color: #b7b8b9;
+  color: #b7b8b9;
 }
 
 .contact button {
-    margin: 0;
+  margin: 0;
 }
-
-
-
 
 /* FOOTER */
 
 .footer {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .footer .wrapper {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+.footer .footer-link {
+  color: rgb(85, 85, 85);
+}
+
+.footer .footer-link:hover {
+  text-decoration: underline;
 }
 
 .footer .footer-copyright {
-    float: left;
-    font-size: 14px;
-    line-height: 22px;
-    color: rgb(85, 85, 85);
-    vertical-align: top;
-    top: 50%;
-    transform: translate(0, 50%);
-    box-sizing: border-box;
-    margin-right: 30px;
+  float: left;
+  font-size: 14px;
+  line-height: 37px;
+  color: rgb(85, 85, 85);
+  /* vertical-align: top; */
+  /* top: 50%; */
+  /* transform: translate(0, 50%); */
+  /* box-sizing: border-box; */
+  /* margin-right: 30px; */
 }
 
 .footer .footer-social {
-    float: left;
-    margin-left: 80px;
+  float: right;
+  overflow: hidden;
+}
+
+.footer .footer-social-link {
+  float: left;
+  margin-left: 4px;
+}
+
+.footer .footer-social-link:first-child {
+  margin-left: 0;
 }
 
 .footer .socicon {
-    margin: 4px;
-    border: none;
-    filter: invert(100%);
+  background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/ss-sprite.png);
+  display: block;
+  /* margin: 0 4px; */
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  filter: invert(100%);
 }
 
 .footer .socicon:hover {
-    filter: invert(80%);
+  filter: invert(80%);
 }
 
 .footer .right {
-    display: inline-block;
-    width: calc(50% - 100px);
+  display: inline-block;
+  width: calc(50% - 100px);
 }
