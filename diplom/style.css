@@ -719,16 +719,20 @@ a {
     font-size: 14px;
     line-height: 37px;
     color: rgb(85, 85, 85);
+    width: calc(100% / 3);
 }
 
 .footer .footer-social {
-    float: right;
+    /* float: left; */
+    text-align: center;
     overflow: hidden;
+    width: calc(100% / 3);
 }
 
 .footer .footer-social-link {
-    float: left;
+    /* float: left; */
     margin-left: 4px;
+    display: inline-block;
 }
 
 .footer .footer-social-link:first-child {
