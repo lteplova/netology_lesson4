@@ -15,16 +15,19 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-
 a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .col50 {
     width: calc(100% / 2);
     float: left;
-    vertical-align: top;
 }
 
 .col50:after {
@@ -56,8 +59,9 @@ a {
     width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 5;
-    height: 120px;
+    padding: 38px 0;
 }
 
 .header .center {
@@ -72,13 +76,12 @@ a {
 }
 
 .logo {
-    line-height: 110px;
+    float: left;
     font-family: Cookie;
     color: #fed136;
     font-size: 40px;
     text-align: left;
     text-decoration: none;
-    display: inline-block;
     transition: all 0.2s ease-in-out;
 }
 
@@ -88,20 +91,16 @@ a {
 }
 
 .header .menu {
-    line-height: 120px;
     float: right;
     text-align: right;
-    margin: 0;
-    padding-left: 0;
 }
 
 .header .menu-item {
-    list-style: none;
-    display: inline-block;
+    float: left;
     text-transform: uppercase;
-    vertical-align: top;
     font-size: 14px;
-    margin-left: 37px;
+    margin-left: 40px;
+    line-height: 45px;
 }
 
 .header .menu-item:first-child {
@@ -114,7 +113,6 @@ a {
 }
 
 .header .menu-link:hover {
-    color: #fff;
     text-decoration: underline;
 }
 
@@ -135,14 +133,14 @@ a {
 
 .promo_text_center {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 }
 
 .promo .overlay {
     position: absolute;
-    top: 120px;
+    top: 121px;
     left: 0;
     right: 0;
     box-sizing: border-box;
@@ -155,8 +153,8 @@ a {
     color: #fff;
     text-transform: uppercase;
     font-size: 4.4em;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 16px;
+    margin-bottom: 40px;
     white-space: nowrap;
 }
 
@@ -303,7 +301,7 @@ a {
 
 .gallery {
     float: left;
-    margin: 0 30px 55px 0;
+    margin-right: 30px;
     width: 290px;
     text-align: center;
     background-color: #fff;
@@ -311,17 +309,14 @@ a {
 }
 
 .gallery:nth-child(1),
-.gallery:nth-child(4) {
-    margin-left: 0;
+.gallery:nth-child(2),
+.gallery:nth-child(3) {
+    margin-bottom: 55px;
 }
 
 .gallery:nth-child(3),
 .gallery:nth-child(6) {
     margin-right: 0;
-}
-
-.gallery:nth-child(n + 3) {
-    margin-bottom: 0px;
 }
 
 .gallery .gallery-image {
@@ -363,6 +358,15 @@ a {
     text-align: center;
 }
 
+.about .about-title {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.about .about-subtitle {
+    margin: 0;
+}
+
 .about .about-main {
     padding: 0;
     position: relative;
@@ -391,7 +395,7 @@ a {
     color: rgb(34, 34, 34);
     font-weight: bold;
     text-align: right;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     margin-top: 0;
     text-align: right;
 }
@@ -425,15 +429,15 @@ a {
     text-align: right;
     font-style: normal;
     line-height: 21px;
+    margin: 0;
 }
 
-
-.about-item.left .about-item-text {
-    padding-right: 222px;
+.about-item-content-left {
+    margin-right: 220px;
 }
 
-.about-item.right .about-item-text {
-    padding-left: 222px;
+.about-item-content-right {
+    margin-left: 220px;
 }
 
 .about .about-main-item:last-child {
@@ -458,12 +462,10 @@ a {
 
 .roundpic.right {
     float: right;
-    margin-left: 42px;
 }
 
 .roundpic.left {
     float: left;
-    margin-right: 38px;
 }
 
 #third_round {
@@ -719,20 +721,17 @@ a {
     font-size: 14px;
     line-height: 37px;
     color: rgb(85, 85, 85);
-    width: calc(100% / 3);
 }
 
 .footer .footer-social {
-    /* float: left; */
+    float: right;
     text-align: center;
     overflow: hidden;
-    width: calc(100% / 3);
 }
 
 .footer .footer-social-link {
-    /* float: left; */
     margin-left: 4px;
-    display: inline-block;
+    float: left;
 }
 
 .footer .footer-social-link:first-child {
