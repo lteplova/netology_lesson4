@@ -60,7 +60,7 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 999;
     padding: 38px 0;
 }
 
@@ -79,8 +79,10 @@ ul {
     float: left;
     font-family: Cookie;
     color: #fed136;
-    font-size: 40px;
-    text-align: left;
+    font-size: 38px;
+    line-height: 38px;
+    width: 100px;
+    text-align: center;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
@@ -120,45 +122,44 @@ ul {
 /* PROMO */
 
 .promo {
-    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -40px;
-    font-weight: 700;
-    margin: auto;
-    text-align: center;
-    height: 700px;
     position: relative;
+    height: 700px;
+    background: 0 0 url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -42px;
 }
 
-.promo_text_center {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.promo .overlay {
+.promo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100% - 121px);
     position: absolute;
     top: 121px;
     left: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding-top: 127px;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 580px;
 }
 
-.promo h1 {
+.promo .promo-content {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+    font-weight: 700;
+    text-align: center;
+}
+
+.promo .promo-title {
     color: #fff;
     text-transform: uppercase;
     font-size: 4.4em;
-    margin-top: 16px;
+    margin-top: 0px;
     margin-bottom: 40px;
     white-space: nowrap;
 }
 
-.promo p {
+.promo .promo-subtitle {
     color: #fff;
     font-size: 45px;
     font-weight: 300;
@@ -166,30 +167,37 @@ ul {
     font-style: italic;
     text-transform: capitalize;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    letter-spacing: 0.6px;
 }
 
-.button {
+.promo .promo-button,
+.contact-button {
+    display: block;
+    margin: 0 auto;
     width: 240px;
     height: 70px;
     background-color: #fed136;
-    border: none;
-    outline: none;
     border-radius: 2px;
     text-transform: uppercase;
     font-size: 1.1em;
+    line-height: 70px;
     font-weight: 600;
     color: #eee;
     text-align: center;
     cursor: pointer;
 }
 
-.button:hover {
+.promo .promo-button:hover,
+.contact-button:hover {
     background-color: #fdc918;
 }
 
+
+/* END PROMO */
+
 .section {
-    padding: 100px 0;
+    padding: 110px 0 119px 0;
 }
 
 .section-title {
@@ -199,13 +207,14 @@ ul {
     font-size: 40px;
     margin: 0;
     margin-top: 10px;
+    letter-spacing: -2px;
 }
 
 .section-subtitle {
     text-align: center;
     font-family: Vollkorn;
     font-style: italic;
-    color: #777777;
+    color: #777;
     font-size: 20px;
     margin: 5px 0 70px 0;
 }
@@ -254,6 +263,7 @@ ul {
 .service .service-block-title {
     margin: 0 0 15px;
     text-transform: capitalize;
+    font-size: 17px;
 }
 
 .service .service-block-subtitle {
@@ -301,11 +311,12 @@ ul {
 
 .gallery {
     float: left;
-    margin-right: 30px;
+    margin-right: 35px;
     width: 290px;
     text-align: center;
     background-color: #fff;
     padding-bottom: 16px;
+    margin-bottom: 6px;
 }
 
 .gallery:nth-child(1),
@@ -327,7 +338,7 @@ ul {
     width: 290px;
     height: 300px;
     padding: 10%;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .gallery .gallery-title {
@@ -338,6 +349,7 @@ ul {
     text-align: center;
     font-weight: 700;
     font-size: 18px;
+    letter-spacing: -1px;
 }
 
 .gallery .gallery-text {
@@ -388,6 +400,7 @@ ul {
     margin-top: 0;
     text-transform: uppercase;
     text-align: right;
+    font-size: 18px;
 }
 
 .about-item .about-subtitle {
@@ -398,6 +411,7 @@ ul {
     margin-bottom: 5px;
     margin-top: 0;
     text-align: right;
+    letter-spacing: -1px;
 }
 
 .about .wrapper {
@@ -412,6 +426,7 @@ ul {
 
 .about-item {
     width: 563px;
+    height: 196px;
 }
 
 .about-item.left {
@@ -434,10 +449,12 @@ ul {
 
 .about-item-content-left {
     margin-right: 220px;
+    padding: 4px;
 }
 
 .about-item-content-right {
     margin-left: 220px;
+    padding: 4px;
 }
 
 .about .about-main-item:last-child {
@@ -484,12 +501,12 @@ ul {
     text-align: center;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
-    line-height: 30px;
+    line-height: 28px;
     background-color: #fed136;
     display: block;
     box-sizing: border-box;
     padding: 32px;
-    margin: 17px auto;
+    margin: -2px auto;
 }
 
 
@@ -501,7 +518,7 @@ ul {
 }
 
 .team-header {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .team .team-title {
@@ -526,7 +543,7 @@ ul {
 }
 
 .team .team-media {
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -577,6 +594,10 @@ ul {
     border-radius: 50%;
     width: 37px;
     height: 37px;
+}
+
+.team .team-footer {
+    margin: 42px 15% 46px;
 }
 
 .socicon:hover {
@@ -637,6 +658,7 @@ ul {
 }
 
 .contact .contact-header {
+    margin-top: -6px;
     margin-bottom: 70px;
 }
 
@@ -693,8 +715,8 @@ ul {
     color: #b7b8b9;
 }
 
-.contact .button {
-    margin: 0;
+.contact .contact-button {
+    margin: 0 auto;
 }
 
 
@@ -725,12 +747,13 @@ ul {
 
 .footer .footer-social {
     float: right;
+    padding-right: 376px;
     text-align: center;
     overflow: hidden;
 }
 
 .footer .footer-social-link {
-    margin-left: 4px;
+    margin-left: 13px;
     float: left;
 }
 
