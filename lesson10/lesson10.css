@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Verdana, sans-serif;
+}
+
+header {
+    background: url(https://lteplova.github.io/netology_lessons/assets/img/header-backgroudn.jpg) no-repeat;
+    width: 100%;
+    background-size: cover;
+    /* height: 100px; */
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.cent {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1168px;
+    border-bottom: 2px solid #4F5168;
+    text-transform: uppercase;
+}
+
+.cent:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    margin: auto 0;
+    color: #66697E;
+    font-weight: 900;
+    font-size: 2em;
+    float: left;
+    line-height: 100px;
+    text-align: left;
+}
+
+span {
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+ul.menu {
+    line-height: 100px;
+    float: right;
+    text-align: right;
+    margin: 0;
+}
+
+ul.menu li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.8em;
+    width: 150px;
+    margin-right: -5px;
+}
+
+ul.menu a {
+    color: #bbbcc5;
+    text-decoration: none;
+}
+
+.promo {
+    background: url(https://lteplova.github.io/netology_lessons/assets/img/header-backgroudn.jpg) no-repeat;
+    background-size: cover;
+    height: 85vh;
+    min-height: 500px;
+    /* max-height: 1000px; */
+}
+
+.promo div {
+    position: absolute;
+    width: 1168px;
+    top: 47vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+
+.promo h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 3.8em;
+    margin: 0 auto;
+    max-width: 1168px;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.promo p {
+    color: #bbbcc5;
+    font-size: 1.5em;
+    margin: 40px auto;
+    max-width: 1168px;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.promo div button {
+    width: 200px;
+    height: 50px;
+    background-color: #e84545;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #eee;
+}
+
+.mcent {
+    margin: 80px auto;
+    max-width: 1168px;
+    padding: 0;
+}
+
+.mcent div {
+    text-align: center;
+    padding: 1.5%;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33.3333%;
+    margin-right: -5px;
+}
+
+.mcent div h2 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.mcent div p {
+    color: #808080;
+    line-height: 1.5em;
+}
+
+.image div {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 25%;
+    height: 300px;
+    margin-right: -5px;
+    border: 1px solid #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image div:nth-child(4),
+div:nth-child(8) {
+    border-right: none;
+}
+
+.image div:nth-child(1),
+div:nth-child(5) {
+    border-left: none;
+}
+
+.image div h5 {
+    display: none;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 130px 20%;
+    color: #fff;
+}
+
+.image h5>span {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.image h5>span:before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.image div:hover h5 {
+    display: block;
+    background-color: rgba(232, 69, 69, 0.9);
+}
+
+
+.foot1 {
+    margin-top: 0px;
+    height: 210px;
+    background: #3A3E64;
+    text-align: center;
+}
+
+.foot1>div {
+    display: inline-block;
+    padding: 40px 0;
+    width: 20%;
+    color: #FFF;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.foot1 h3 {
+    text-transform: uppercase;
+}
+
+.foot1 p {
+    color: #808080;
+}
+
+.iconss {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: solid 2px #FFF;
+}
+
+.foot2 {
+    height: 100px;
+    padding: 10px 0;
+    background: #313454;
+    text-align: center;
+    color: #808080;
+}
+
+.foot2 span:nth-child(1) {
+    color: red;
+}
+
+.foot2 span:nth-child(2) {
+    color: #fff;
+}

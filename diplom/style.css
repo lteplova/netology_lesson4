@@ -1,0 +1,781 @@
+/* COMMON STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.col50 {
+    width: calc(100% / 2);
+    float: left;
+}
+
+.col50:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col50:nth-child(1) {
+    padding-right: 20px;
+}
+
+.col50:nth-child(2) {
+    padding-left: 20px;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 38px 0;
+}
+
+.header .center {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.header .center:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    font-family: Cookie;
+    color: #fed136;
+    font-size: 38px;
+    line-height: 38px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    color: #fdc918;
+    transform: scale(1.1);
+}
+
+.header .menu {
+    float: right;
+    text-align: right;
+}
+
+.header .menu-item {
+    float: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 45px;
+}
+
+.header .menu-item:first-child {
+    margin-left: 0;
+}
+
+.header .menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .menu-link:hover {
+    text-decoration: underline;
+}
+
+
+/* PROMO */
+
+.promo {
+    position: relative;
+    height: 700px;
+    background: 0 0 url(https://lteplova.github.io/netology_lessons/assets/img/alfa/promo.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -42px;
+}
+
+.promo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100% - 121px);
+    position: absolute;
+    top: 121px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.promo .promo-content {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+    font-weight: 700;
+    text-align: center;
+}
+
+.promo .promo-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.4em;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+.promo .promo-subtitle {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: Vollkorn;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    letter-spacing: 0.6px;
+}
+
+.promo .promo-button,
+.contact-button {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 70px;
+    background-color: #fed136;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    line-height: 70px;
+    font-weight: 600;
+    color: #eee;
+    text-align: center;
+    cursor: pointer;
+}
+
+.promo .promo-button:hover,
+.contact-button:hover {
+    background-color: #fdc918;
+}
+
+
+/* END PROMO */
+
+.section {
+    padding: 110px 0 119px 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 10px;
+    letter-spacing: -2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-family: Vollkorn;
+    font-style: italic;
+    color: #777;
+    font-size: 20px;
+    margin: 5px 0 70px 0;
+}
+
+.icons {
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/servicies-sprite.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* SERVICE */
+
+.service .services-header {
+    margin-bottom: 70px;
+}
+
+.service .service-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.service .service-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.service .service-main {
+    overflow: hidden;
+}
+
+.service .service-block {
+    text-align: center;
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 10px;
+}
+
+.service .service-block-icon {
+    margin-bottom: 15px;
+}
+
+.service .service-block-title {
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.service .service-block-subtitle {
+    font-family: Roboto Slab;
+    color: #777777;
+    font-size: 14px;
+}
+
+.icon1 {
+    background-position: 5px;
+}
+
+.icon2 {
+    background-position: -80px;
+}
+
+.icon3 {
+    background-position: -160px;
+}
+
+
+/* HEADGALLERY */
+
+.headgallery {
+    background-color: #f7f7f7;
+}
+
+.headgallery .headgallery-header {
+    margin-bottom: 70px;
+}
+
+.headgallery .headgallery-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.headgallery .headgallery-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.headgallery .headgallery-main {
+    overflow: hidden;
+}
+
+.gallery {
+    float: left;
+    margin-right: 35px;
+    width: 290px;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 16px;
+    margin-bottom: 6px;
+}
+
+.gallery:nth-child(1),
+.gallery:nth-child(2),
+.gallery:nth-child(3) {
+    margin-bottom: 55px;
+}
+
+.gallery:nth-child(3),
+.gallery:nth-child(6) {
+    margin-right: 0;
+}
+
+.gallery .gallery-image {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background-position: center;
+    width: 290px;
+    height: 300px;
+    padding: 10%;
+    margin-bottom: 27px;
+}
+
+.gallery .gallery-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #777777;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+.gallery .gallery-text {
+    text-align: center;
+    font-family: Vollkorn;
+    font-style: italic;
+    color: #777777;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* ABOUT */
+
+.about .about-header {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.about .about-title {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.about .about-subtitle {
+    margin: 0;
+}
+
+.about .about-main {
+    padding: 0;
+    position: relative;
+}
+
+.about .about-main::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 90%;
+    background-color: #f3f3f3;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+.about-item .about-title {
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 18px;
+}
+
+.about-item .about-subtitle {
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: right;
+    letter-spacing: -1px;
+}
+
+.about .wrapper {
+    overflow: hidden;
+}
+
+.about .about-main-item {
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 3;
+}
+
+.about-item {
+    width: 563px;
+    height: 196px;
+}
+
+.about-item.left {
+    float: left;
+}
+
+.about-item.right {
+    float: right;
+}
+
+.about .about-item-text {
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Roboto Slab';
+    text-align: right;
+    font-style: normal;
+    line-height: 21px;
+    margin: 0;
+}
+
+.about-item-content-left {
+    margin-right: 220px;
+    padding: 4px;
+}
+
+.about-item-content-right {
+    margin-left: 220px;
+    padding: 4px;
+}
+
+.about .about-main-item:last-child {
+    padding-bottom: 0;
+}
+
+.about-item.right * {
+    text-align: left;
+}
+
+.roundpic {
+    width: 185px;
+    height: 185px;
+    border: solid 7px #f7f7f7;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.roundpic.right {
+    float: right;
+}
+
+.roundpic.left {
+    float: left;
+}
+
+#third_round {
+    background-position: bottom;
+}
+
+.roundpic:hover {
+    border-color: #eee;
+    cursor: pointer;
+}
+
+.last {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    line-height: 28px;
+    background-color: #fed136;
+    display: block;
+    box-sizing: border-box;
+    padding: 32px;
+    margin: -2px auto;
+}
+
+
+/* TEAM */
+
+.team {
+    padding-bottom: 70px;
+    background-color: #f7f7f7;
+}
+
+.team-header {
+    margin-bottom: 80px;
+}
+
+.team .team-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.team .team-subtitle {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.team .team-main {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.team .team-card {
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+
+.team .team-media {
+    margin: 0 auto 25px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.team .team-image {
+    display: block;
+    border-radius: 50%;
+}
+
+.team .team-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+
+.team .team-card-subtitle {
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+
+.team .team-memo {
+    max-width: 768px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777777;
+    font-family: 'Roboto Slab';
+    text-align: center;
+}
+
+.team .team-meta-link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.team .team-meta-link .socicon {
+    display: block;
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/ss-sprite.png);
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+}
+
+.team .team-footer {
+    margin: 42px 15% 46px;
+}
+
+.socicon:hover {
+    border-color: #666;
+}
+
+.twitter {
+    background-position: -4px 2px;
+}
+
+.fb {
+    background-position: -55px 0;
+}
+
+.pint {
+    background-position: -104px 0;
+}
+
+.gp {
+    background-position: -154px 2px;
+}
+
+
+/* PARTNERS */
+
+.partners {
+    padding: 60px 0;
+}
+
+.partners .partners-link {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.partners .partners-link:last-child {
+    margin-right: 0;
+}
+
+.partners .partners-image {
+    vertical-align: middle;
+    transition: all 0.2s ease-in-out;
+}
+
+.partners img:hover {
+    transform: scale(1.1);
+}
+
+
+/* CONTACT */
+
+.contact {
+    background-color: #222222;
+    background-image: url('https://lteplova.github.io/netology_lessons/assets/img/alfa/map.png');
+    background-repeat: no-repeat;
+    background-position: 60vw 10vh;
+    text-align: center;
+}
+
+.contact .contact-header {
+    margin-top: -6px;
+    margin-bottom: 70px;
+}
+
+.contact-form {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.contact-title {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contact-subtitle {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #b7b8b9;
+}
+
+.contact-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-input:last-child {
+    margin-bottom: 0;
+}
+
+.contact-textarea {
+    width: 100%;
+    height: 210px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    color: #b7b8b9;
+}
+
+.contact .contact-button {
+    margin: 0 auto;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 20px 0;
+}
+
+.footer .wrapper {
+    overflow: hidden;
+}
+
+.footer .footer-link {
+    color: rgb(85, 85, 85);
+}
+
+.footer .footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-copyright {
+    float: left;
+    font-size: 14px;
+    line-height: 37px;
+    color: rgb(85, 85, 85);
+}
+
+.footer .footer-social {
+    float: right;
+    padding-right: 376px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer .footer-social-link {
+    margin-left: 13px;
+    float: left;
+}
+
+.footer .footer-social-link:first-child {
+    margin-left: 0;
+}
+
+.footer .socicon {
+    background-image: url(https://lteplova.github.io/netology_lessons/assets/img/alfa/ss-sprite.png);
+    display: block;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    filter: invert(100%);
+}
+
+.footer .socicon:hover {
+    filter: invert(80%);
+}
+
+.footer .right {
+    display: inline-block;
+    width: calc(50% - 100px);
+}
